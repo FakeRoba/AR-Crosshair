@@ -1,9 +1,9 @@
 local YtdFile = "crosshairs"
 local CurrentlyShaking = false
-local GunTypes, GunShakes = {}, {} -- converttaan hashiks suoraan
+local GunShakes = {}
 
 GetShakeSpeed = function(WeaponHash)
-    local GunType = GunTypes[WeaponHash] or AR.FallbackShake
+    local GunType = GetWeapontypeGroup(WeaponHash)
     local ShakeSpeed = GunShakes[WeaponHash] or GunShakes[GunType]
 
     return ShakeSpeed or 0.0
@@ -12,18 +12,15 @@ end
 CreateThread(function()
     lib.requestStreamedTextureDict(YtdFile, 1100)
 
-    for k, v in pairs(AR.GunTypes) do -- Convert
-        GunTypes[GetHashKey(k)] = v
-    end
-
     for k, v in pairs(AR.Shake) do -- Convert
         local Key = k
 
-        if k:find("WEAPON_") then
-            Key = GetHashKey(k)
+        if not k:find("WEAPON_") then
+            Key = ("%s_%s"):format("GROUP", k)
         end
 
-        GunShakes[Key] = v
+        print(Key, GetHashKey(Key))
+        GunShakes[GetHashKey(Key)] = v
     end
 
     while true do
@@ -35,7 +32,7 @@ CreateThread(function()
             Sleep = 1100
         end
 
-        if hasWeapon and GunTypes[weaponHash] ~= "Sniper" and GetFollowPedCamViewMode() ~= 4 and IsPlayerFreeAiming(PlayerId()) then
+        if hasWeapon and GetWeapontypeGroup(weaponHash) ~= "GROUP_SNIPER" and GetFollowPedCamViewMode() ~= 4 and IsPlayerFreeAiming(PlayerId()) then
             Sleep = 1
             DrawSprite(YtdFile, CurrentCrosshair, 0.5, 0.5, (0.03*25)*CurrentCrosshairWidth, CurrentCrosshairWidth, 0.0, CurrentCrosshairColor.x, CurrentCrosshairColor.y, CurrentCrosshairColor.z, 255)
 
