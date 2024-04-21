@@ -35,7 +35,7 @@ CreateThread(function()
             Sleep = 1100
         end
 
-        if hasWeapon and (GunTypes[weaponHash] and GunTypes[weaponHash] ~= "Sniper") and GetFollowPedCamViewMode() ~= 4 and IsPlayerFreeAiming(PlayerId()) then
+        if hasWeapon and GunTypes[weaponHash] ~= "Sniper" and GetFollowPedCamViewMode() ~= 4 and IsPlayerFreeAiming(PlayerId()) then
             Sleep = 1
             DrawSprite(YtdFile, CurrentCrosshair, 0.5, 0.5, (0.03*25)*CurrentCrosshairWidth, CurrentCrosshairWidth, 0.0, CurrentCrosshairColor.x, CurrentCrosshairColor.y, CurrentCrosshairColor.z, 255)
 
