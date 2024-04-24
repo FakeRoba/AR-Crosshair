@@ -8,6 +8,7 @@ File is not framework related.
 <br></br>
 # Updates
 - Camera shake.
+- Instead of listing every weapon and calling it day, i updated it to use weapon groups to identify if it is rifle or pistol.
 <br></br>
 
 Tags: Crosshair, Fivem, Lua, Shake, Weapon
