@@ -19,7 +19,6 @@ CreateThread(function()
             Key = ("%s_%s"):format("GROUP", k)
         end
 
-        print(Key, GetHashKey(Key))
         GunShakes[GetHashKey(Key)] = v
     end
 

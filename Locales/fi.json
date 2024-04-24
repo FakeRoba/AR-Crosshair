@@ -1,0 +1,21 @@
+{
+    "crosshair_height_width": "Crosshairin pituus",
+    "height": "Pituus",
+    "crosshair_color": "Crosshairin väri",
+    "set_crosshair_color": "Laita crosshairin väri",
+    "color": "Väri",
+    "choose_crosshair": "Valitse crosshair",
+
+    "custom_crosshair_circle": "Ympyrä",
+    "custom_crosshair_cock": "K18",
+    "custom_crosshair_melkeinkolmio": "Wnb kolmio",
+    "custom_crosshair_csgodefault": "Csgo defaultti",
+    "custom_crosshair_smallcircle_fill": "Ympyrä täytetty",
+    "custom_crosshair_circle_ring": "Ympyrä rinkula",
+    "custom_crosshair_circlesemi": "Semi ympyrä",
+    "custom_crosshair_circle_fill": "Ympyrä täytetty",
+    "custom_crosshair_x": "X",
+    "custom_crosshair_drip": "HULLU DRIP",
+    "custom_crosshair_smallcircle": "Pieni ympyrä",
+    "custom_crosshair_risti": "Risti"
+}

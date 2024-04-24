@@ -1,21 +1,30 @@
 AR = {}
 
-AR.DefaultCrosshair = "circle" -- vaiha jos haluut
+AR.DefaultCrosshair = "circle" -- Change if you want
 AR.DefaultCrosshairColor = {162, 0, 255} -- r, g, b
 
 AR.CrosshairTextures = {
-    ["circle"] = "Ympyrä", -- add more
-    ["cock"] = "K18",
-    ["melkeinkolmio"] = "Wnb kolmio",
-    ["csgodefault"] = "Csgo default",
-    ["smallcircle_fill"] = "Ympyrä täytetty",
-    ["circle_ring"] = "Ympyrä rinkula",
-    ["circlesemi"] = "Semi ympyrä",
-    ["circle_fill"] = "Ympyrä täytetty",
-    ["x"] = "Raksi (ei se ruokala)",
-    ["drip"] = "HULLU DRIP",
-    ["smallcircle"] = "Pieni ympyrä",
-    ["risti"] = "Risti"
+    --[[
+        ["texturename"] = "label"
+        OR
+        ["texturename"] = true then go to Locales, select your language and add this:
+        "custom_crosshair_CROSSHAIRNAMEHERE": "LABEL HERE",
+        replace CROSSHAIRNAMEHERE with your crosshair name .png/.jpeg and add label
+        the name is have to be the same in the .ytd file
+    ]]
+
+    ["circle"] = true,
+    ["cock"] = true,
+    ["melkeinkolmio"] = true,
+    ["csgodefault"] = true,
+    ["smallcircle_fill"] = true,
+    ["circle_ring"] = true,
+    ["circlesemi"] = true,
+    ["circle_fill"] = true,
+    ["x"] = true,
+    ["drip"] = true,
+    ["smallcircle"] = true,
+    ["risti"] = true
 }
 
 -- Shake --
