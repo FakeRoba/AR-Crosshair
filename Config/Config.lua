@@ -9,7 +9,7 @@ AR.CrosshairTextures = {
         OR
         ["texturename"] = true then go to Locales, select your language and add this:
         "custom_crosshair_CROSSHAIRNAMEHERE": "LABEL HERE",
-        replace CROSSHAIRNAMEHERE with your crosshair name .png/.jpeg and add label
+        replace CROSSHAIRNAMEHERE with your crosshair name .png/ and add label
         the name is have to be the same in the .ytd file
     ]]
 
