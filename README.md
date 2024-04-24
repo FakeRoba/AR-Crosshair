@@ -14,11 +14,11 @@ File is not framework related.
 - ox_lib
 <br></br>
 # Updates
-## 1.1 | 24.4.2024
+## Version 1.1 | 24.4.2024
 - Added version checker
 - Added "preview" images to crosshairs
 - Added locales
-## 1.0
+## Version 1.0
 - Camera shake.
 - Instead of listing every weapon and calling it day, i updated it to use weapon groups to identify if it is rifle or pistol.
 <br></br>
