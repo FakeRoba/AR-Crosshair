@@ -1,7 +1,8 @@
 game 'gta5'
 fx_version 'cerulean'
 lua54 'yes'
-version '1.1'
+version '1.1.0'
+repository 'https://github.com/FakeRoba/AR-Crosshair'
 author 'Roba'
 
 files {
