@@ -29,7 +29,7 @@ AR.CrosshairTextures = {
 
 -- Shake --
 
-AR.Shake = { -- if group not found or the gun then there is no shake
+AR.Shake = { -- if group or gun model not found then there is no shake
     ["WEAPON_PISTOL"] = 1.0, -- overwrites the group value
 
     -- GROUPS
@@ -40,5 +40,6 @@ AR.Shake = { -- if group not found or the gun then there is no shake
     ["RIFLE"] = 1.5,
     ["MG"] = 1.8, -- MACHINE GUN / LIGHT MACHINE GUN
     ["SNIPER"] = 1.2,
-    -- there is also HEAVY but idk what is that
+
+    -- MORE GROUPS: https://docs.fivem.net/natives/?_0xC3287EE3050FB74C (if you add more groups remove the GROUP_ prefix from that)
 }
