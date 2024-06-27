@@ -4,9 +4,9 @@ Multiple crosshairs and easy to create new crosshair for every player to use.
 File is not framework related.
 
 # Installation
-- Drag and drop those images to your inventory's image folder
+- Drag and drop those images to your inventory's image folder (if inventory not found then previews wont work)
 - Drag and drop AR-Crosshair file
-- Configure configuration file if needed
+- Configure if needed
 - Check that you have dependencies and dependencies start beforce AR-Crosshair script
 - Start file and enjoy
 
